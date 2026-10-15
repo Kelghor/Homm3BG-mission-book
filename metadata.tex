@@ -1,4 +1,4 @@
-\input{\sections/language_metadata.tex}
+\input{sections/language_metadata.tex}
 
 % Set page size and margins
 \usepackage[
@@ -391,7 +391,6 @@
     \end{pgfonlayer}
   \end{tikzpicture}
 }
-% End of Heroes-styled canvas definition.
 
 % Redefinition of the table for mutlicol enviromnents
 \newcommand{\hommtablemulticol}[3][shade, blur shadow={shadow opacity=15}]{
@@ -496,10 +495,13 @@
 
 \begin{document}
 
-\input{structure.tex}
+% \input{structure.tex} % <--- TOTO ZAKOMENTOVANO (Menu, úvod, ostatní scénáře)
+
+% ZDE VLOŽTE POUZE VÁŠ SCÉNÁŘ:
+\input{coops/obelisks_of_power.tex}
 
 \iftoggle{individualscenario}{
-  \include{\sections/feedback_page.tex}
+  \include{sections/feedback_page.tex}
 }
 
 \end{document}
